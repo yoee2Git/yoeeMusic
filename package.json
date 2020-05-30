@@ -1,0 +1,66 @@
+{
+  "name": "musicc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "keywords": [
+    "网易云音乐",
+    "网易云",
+    "音乐",
+    "网易云音乐nodejs"
+  ],
+  "main": "main.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": "yoee",
+  "license": "MIT",
+  "files": [
+    "module",
+    "util"
+  ],
+  "dependencies": {
+    "apicache": "^1.5.2",
+    "axios": "^0.19.2",
+    "better-scroll": "^1.15.2",
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "pac-proxy-agent": "^3.0.1",
+    "request": "^2.88.0",
+    "vant": "^2.8.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.4.0",
+    "@vue/cli-plugin-router": "^4.4.0",
+    "@vue/cli-plugin-vuex": "^4.4.0",
+    "@vue/cli-service": "^4.4.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "eslint": "^6.6.0",
+    "eslint-plugin-html": "^6.0.0",
+    "husky": "^3.0.9",
+    "intelli-espower-loader": "^1.0.1",
+    "lint-staged": "^9.4.2",
+    "mocha": "^6.2.2",
+    "power-assert": "^1.6.1"
+  }
+}
